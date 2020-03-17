@@ -82,9 +82,7 @@ class MainActivity : AppCompatActivity(),OnNotesButtonClick{
     private fun loadFullAll(){
         try{
             adapter.clear()
-            for(case:CaseObject in fullList){
-                adapter.add(CaseObjectRow(case,this))
-            }
+           loadPlaceCaseJSON()
         }catch (e:Exception){
             //
 
