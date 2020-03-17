@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="8dp">
+
+
+    <TextView
+        android:id="@+id/caseNum_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Case no:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/caseNum_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/caseNum_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/caseNum_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/caseNum_label_TV"
+        tools:text="Num" />
+
+    <TextView
+        android:id="@+id/date_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/caseNum_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/caseNum_TV" />
+
+    <TextView
+        android:id="@+id/date_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/date_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/date_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/date_label_TV"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/age_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/date_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/date_TV" />
+
+    <TextView
+        android:id="@+id/age_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/age_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/age_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/age_label_TV"
+        tools:text="Age" />
+
+    <TextView
+        android:id="@+id/gender_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/age_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/age_TV" />
+
+    <TextView
+        android:id="@+id/gender_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gender_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/gender_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/gender_label_TV"
+        tools:text="Gender" />
+
+    <TextView
+        android:id="@+id/nationality_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationality:"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gender_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/gender_TV" />
+
+    <TextView
+        android:id="@+id/nationality_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nationality_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/nationality_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/nationality_label_TV"
+        tools:text="Nationality" />
+
+    <TextView
+        android:id="@+id/hospital_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admitted at:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nationality_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/nationality_TV" />
+
+    <TextView
+        android:id="@+id/hospital_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/hospital_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/hospital_label_TV"
+        tools:text="Hospital" />
+
+    <TextView
+        android:id="@+id/travelHistory_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Had travel history abroad:"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/hospital_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/hospital_TV" />
+
+    <TextView
+        android:id="@+id/travelHistory_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/travelHistory_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/travelHistory_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/travelHistory_label_TV"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Yes/No" />
+
+    <TextView
+        android:id="@+id/status_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/travelHistory_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/travelHistory_TV" />
+
+    <TextView
+        android:id="@+id/status_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/status_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/status_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/status_label_TV"
+        tools:text="Status" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_TV" />
+
+    <Button
+        android:id="@+id/seeNotes_btn"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

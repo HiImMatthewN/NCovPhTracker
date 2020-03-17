@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">NCoVPhTracker</string>
+
+
+
+    <string-array name="filter_choices_array">
+        <item>All/Refresh List</item>
+        <item>Case No.</item>
+        <item>Status</item>
+        <item>Age</item>
+        <item>Date</item>
+        <item>Gender</item>
+        <item>Nationality</item>
+    </string-array>
+
+    //Search by Case No.
+    <string name="searchMenu_ID_itemString">Filter by Case No.</string>
+    <array name="SearchMenuID">
+        <item>Specific</item>
+        <item>Set Range</item>
+    </array>
+
+
+    //Search By Gender
+    <string name="searchMenu_gender_itemString">Filter by gender</string>
+    <array name="SearchMenuGender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+        //Search By Status
+    <string name="searchMenu_status_itemString">Filter by status </string>
+    <array name="SearchMenuStatus">
+        <item>Admitted</item>
+        <item>Recovered</item>
+        <item>Died</item>
+    </array>
+
+
+    //Search By Age
+    <string name="searchMenu_age_itemString">Filter by age group</string>
+    <array name="SearchMenuAge">
+        <item>Specific</item>
+        <item>Set Range</item>
+    </array>
+
+    //Search By Date
+    <string name="searchMenu_Date_itemString">Filter by Date</string>
+    <array name="SearchMenuDate">
+        <item>Specific</item>
+        <item>Set Range</item>
+    </array>
+
+
+    //Search By Nationality
+    <string name="searchMenu_nationality_itemString">Filter by nationality</string>
+    <array name="SearchMenuNationality">
+        <item>Filipino</item>
+        <item>Foreign</item>
+        <item>Not Yet Known</item>
+    </array>
+
+
+
+
+
+</resources>

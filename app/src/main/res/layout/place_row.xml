@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/region_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region:"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="10dp"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/region_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/region_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/region_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/region_label_TV"
+        tools:text="Region" />
+
+    <TextView
+        android:id="@+id/cityProvince_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City Province:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/region_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/region_TV" />
+
+    <TextView
+        android:id="@+id/cityProvince_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="City Province"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cityProvince_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/cityProvince_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/cityProvince_label_TV" />
+
+    <TextView
+        android:id="@+id/confirmedCases_label_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmed Cases:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cityProvince_label_TV"
+        app:layout_constraintTop_toBottomOf="@+id/cityProvince_TV" />
+
+
+    <TextView
+        android:id="@+id/confirmedCasesl_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:layout_marginStart="5dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/confirmedCases_label_TV"
+        app:layout_constraintStart_toEndOf="@+id/confirmedCases_label_TV"
+        app:layout_constraintTop_toTopOf="@+id/confirmedCases_label_TV"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Confirmed Cases" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmedCasesl_TV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
